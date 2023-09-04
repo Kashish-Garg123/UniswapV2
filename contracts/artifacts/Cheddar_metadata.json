@@ -1,0 +1,135 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract IUniswapV2Router02",
+						"name": "_router",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_wrappedMatic",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_tokens",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "bp",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalBP",
+						"type": "uint256"
+					}
+				],
+				"name": "swapAndPay",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/defi.sol": "Cheddar"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/proxy/utils/Initializable.sol": {
+			"keccak256": "0x4823752b07b8ea4ca971b217e39457930e7cb103c2c91e2a29729e5ca907e4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f319af26a9ade3e6cf3698bf1b84aa6213bdd7a76606ea9ba56ced163593934",
+				"dweb:/ipfs/QmZ2u9zen5Htan4dSP1RZCY2XqB9HUwqkNCMzdn7aV2jWc"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xbbc8ac883ac3c0078ce5ad3e288fbb3ffcc8a30c3a98c0fda0114d64fc44fca2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87a7a5d2f6f63f84598af02b8c50ca2df2631cb8ba2453e8d95fcb17e4be9824",
+				"dweb:/ipfs/QmR76hqtAcRqoFj33tmNjcWTLrgNsAaakYwnKZ8zoJtKei"
+			]
+		},
+		"@openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0x2ccf9d2313a313d41a791505f2b5abfdc62191b5d4334f7f7a82691c088a1c87",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b3a57d0854b2fdce6ebff933a48dca2445643d1eccfc27f00292e937f26c6a58",
+				"dweb:/ipfs/QmW45rZooS9TqR4YXUbjRbtf2Bpb5ouSarBvfW1LdGprvV"
+			]
+		},
+		"contracts/defi.sol": {
+			"keccak256": "0xddf9e1b81afbd3b92e0406e49f198784f855af9ca250fe2a70839c9da69a108e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://d6bd681a6c6eb4cbabefd00b4b017c7fee6aacc5b912b3cc07571fefc3a159e6",
+				"dweb:/ipfs/QmTR4cir3fHcEefC53doTyZB2VLAg7FtSJLWPz7eUcjox3"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Router01.sol": {
+			"keccak256": "0xd27c835b388d58b3008a791dfaccb168515fc3f9e517eac0e4997b798a21deaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98e76db484957f8d9b0523bcb51665466c3e1f719c89992e10fdb39214424299",
+				"dweb:/ipfs/Qmb7ygbNaZiGEEs8Dgqt5LhG1B4u7uV4Cye3nAC3hZtQmX"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Router02.sol": {
+			"keccak256": "0x5e4804c8d46fde7223ce701c94945176b1bbd8cfd642aeb717c9bf5df54f83cd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://539a1fd1ed4f784563d99acb60de2dd73b6a3e97a954233213401b18f4d8cadb",
+				"dweb:/ipfs/QmPBrNpb478Tsh6jMbz83m9tnyhBASQMGaBR87JVtwX591"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x72b6a1d297cd3b033d7c2e4a7e7864934bb767db6453623f1c3082c6534547f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a8cb8681076e765c214e0d51cac989325f6b98e315eaae06ee0cbd5a9f084763",
+				"dweb:/ipfs/QmNWGHi4zmjxQTYN3NMGnJd49jBT5dE4bxTdWEaDuJrC6N"
+			]
+		}
+	},
+	"version": 1
+}

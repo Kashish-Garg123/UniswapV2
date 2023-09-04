@@ -1,0 +1,305 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "factory",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "router",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountB",
+						"type": "uint256"
+					}
+				],
+				"name": "addliquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenadrs",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "ltwoadrs",
+						"type": "address"
+					}
+				],
+				"name": "collectedfee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "feeprcnt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenOut",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "getAmountOutMin",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getreseves",
+				"outputs": [
+					{
+						"internalType": "uint112",
+						"name": "r1",
+						"type": "uint112"
+					},
+					{
+						"internalType": "uint112",
+						"name": "r2",
+						"type": "uint112"
+					},
+					{
+						"internalType": "uint32",
+						"name": "b",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenB",
+						"type": "address"
+					}
+				],
+				"name": "removeLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_feeprcnt",
+						"type": "uint256"
+					}
+				],
+				"name": "setperc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "swap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ltwo.sol": "testuniswapliquidity"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xbbc8ac883ac3c0078ce5ad3e288fbb3ffcc8a30c3a98c0fda0114d64fc44fca2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87a7a5d2f6f63f84598af02b8c50ca2df2631cb8ba2453e8d95fcb17e4be9824",
+				"dweb:/ipfs/QmR76hqtAcRqoFj33tmNjcWTLrgNsAaakYwnKZ8zoJtKei"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0x8169fdd92600a70359058f5a0faff585e6f777c0b7d396471eb44af3422c36c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eb6475973ae314001ee6b1dd9ddcb2478bec0dea195568254a66ded3dd56c02e",
+				"dweb:/ipfs/QmUdCoXfnsUy55JF64QNo2b9M84UX4DA4dzRKo8YNX1M3h"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0xc30ff6c6324b53a187353997af1f1fd6afc8dbcdce7b83685be33fa2fcc17048",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb2fc9526f9fe0365e8d09abe5b9945dc9b22d550c814f8994479306f100539e",
+				"dweb:/ipfs/QmW6H3CVoXZ2Rtxv1o9iBRki3MAknSwDo6fQDnJ3guoogv"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Router01.sol": {
+			"keccak256": "0xd27c835b388d58b3008a791dfaccb168515fc3f9e517eac0e4997b798a21deaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98e76db484957f8d9b0523bcb51665466c3e1f719c89992e10fdb39214424299",
+				"dweb:/ipfs/Qmb7ygbNaZiGEEs8Dgqt5LhG1B4u7uV4Cye3nAC3hZtQmX"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Router02.sol": {
+			"keccak256": "0x5e4804c8d46fde7223ce701c94945176b1bbd8cfd642aeb717c9bf5df54f83cd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://539a1fd1ed4f784563d99acb60de2dd73b6a3e97a954233213401b18f4d8cadb",
+				"dweb:/ipfs/QmPBrNpb478Tsh6jMbz83m9tnyhBASQMGaBR87JVtwX591"
+			]
+		},
+		"contracts/ltwo.sol": {
+			"keccak256": "0x273a49b457d73df60cd583bcd02c893057e69d785dcbd82a2a87a35aecfb54a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9293a0f8bffe2c010aa4f85ef79af27b1db5988829f2cdafe406677f87858d68",
+				"dweb:/ipfs/QmVJ86QBSXqNPmNcY4dbfd51YKFFnAgRBzMcRHwjuBMNpg"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
+			]
+		}
+	},
+	"version": 1
+}
